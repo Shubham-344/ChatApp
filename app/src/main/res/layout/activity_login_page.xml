@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="#B8B8B8">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="200dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/animation2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingVertical="60dp"
+        android:background="@drawable/login_bg">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_inp_box"
+        app:errorEnabled="true"
+        android:paddingHorizontal="5dp"
+        android:layout_marginHorizontal="20dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="25dp"
+        app:boxCornerRadiusTopStart="25dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="   Email"
+            android:textSize="14dp"
+            android:id="@+id/usernameInp"
+            android:paddingStart="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_inp_box"
+        app:errorEnabled="true"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="5dp"
+        app:boxCornerRadiusBottomEnd="25dp"
+        app:boxCornerRadiusBottomStart="25dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusTopStart="0dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="   Password"
+            android:textSize="14dp"
+            android:paddingHorizontal="7dp"
+            android:layout_marginVertical="5dp"
+            android:id="@+id/passwordInp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="forgot password"
+        android:textAlignment="viewEnd"
+        android:paddingRight="18dp"
+        android:paddingTop="8dp"
+        android:id="@+id/forgotpass"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:text="LogIn"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:theme="@style/Theme.AppCompat.Dialog.MinWidth"
+        android:layout_marginTop="100dp"
+        android:id="@+id/loginBtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User!! Signup here"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:id="@+id/SignUphere"
+        android:background="#00000000"/>
+    </LinearLayout>
+
+</LinearLayout>

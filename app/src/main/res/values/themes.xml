@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChatApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="TabText" parent="Base.Theme.ChatApp">
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontWeight">100</item>
+    </style>
+    <style name="Theme.ChatApp" parent="Base.Theme.ChatApp">
+        <item name="colorPrimary">#3B3939</item>
+        <item name="colorPrimaryDark">#8D97D6</item>
+        <item name="colorAccent">#FAB3A2</item>
+    </style>
+    <style name="transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#00FFFCFC</item>
+        <item name="colorPrimaryDark">#8D97D6</item>
+        <item name="colorAccent">#FAB3A2</item>
+    </style>
+</resources>
